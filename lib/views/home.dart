@@ -151,7 +151,7 @@ class _HomeState extends State<Home> {
         shadowColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
         title: Text(
-          "With You",
+          "UrRakshak",
           style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
@@ -354,29 +354,26 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.only(top: 40.0, right: 60, left: 60),
-                  child: ElevatedButton(
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                              left: 35.0, top: 8, bottom: 8, right: 8),
-                          child: SvgPicture.asset(
-                            "assets/icons/add_alert.svg",
-                            height: size.height * 0.05,
-                            color: Colors.white,
-                          ),
+                  padding: const EdgeInsets.only(top: 40.0),
+                  child: ElevatedButton.icon(
+                    icon: Padding(
+                      padding: EdgeInsets.only(left: 10),
+                      child: SvgPicture.asset(
+                        "assets/icons/add_alert.svg",
+                        height: size.height * 0.05,
+                        color: Colors.white,
+                      ),
+                    ),
+                    label: Padding(
+                      padding: EdgeInsets.only(right: 10),
+                      child: Text(
+                        "Add Contacts",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 21,
                         ),
-                        Text(
-                          "Add Contacts",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 21,
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                     onPressed: () {
                       Navigator.push(
