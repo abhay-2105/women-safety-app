@@ -1,0 +1,41 @@
+name: women_safety_app
+description: Women Safety App
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore:
+  firebase_auth:
+  google_sign_in:
+  shared_preferences:
+  firebase_core: ^0.5.2+1
+  awesome_notifications:
+  fluttertoast: 
+  giffy_dialog: ^1.8.0
+  cupertino_icons: ^1.0.0
+  flutter_svg: ^0.19.1
+  
+  sqflite:
+  telephony:
+  geolocator:
+  geocoding:
+  permission_handler:
+  contacts_service:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+  - assets/images/
+  - assets/icons/
